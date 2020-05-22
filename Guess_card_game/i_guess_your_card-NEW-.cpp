@@ -2,7 +2,7 @@
  * Magic Card Game: I Guess Your Card   *
  * Written in C++                       *
  * Fri April 24 2020                    *
- * Author: arfanamd            ♠ ♣ ♥ ♦  *
+ * Author: arfanamd            ♠ ♣ ♥ ♦ *
  * **************************************/
 
 #include "i_guess_your_card-NEW-.h"
@@ -67,8 +67,8 @@ void Play_game(Stack_opt &stack1, Stack_opt &stack2, Stack_opt &stack3) {
 	stack2.Show(); std::puts("\n");
 	stack3.Show(); std::puts("\n");
 
-	std::printf("   --: Pick your card! :--\n");
-	std::printf("just look at it and press enter");
+	std::printf("   --: Pick one card! :--\n");
+	std::printf("just remember it and press enter");
 	std::fgets(ent_key, sizeof(ent_key), stdin);
 	std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
@@ -82,9 +82,8 @@ void Play_game(Stack_opt &stack1, Stack_opt &stack2, Stack_opt &stack3) {
 		} else if(pick == 3 && stat >= 2) {
 			break;
 		} else {
-			std::puts("wth??..");
+			std::puts("wth dude??..");
 			Sleep(2);
-			std::puts("dude, you have one job.. Damn");
 			goto UNEDUCATED_PLAYER;
 		}
 

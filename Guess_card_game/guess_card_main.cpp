@@ -10,7 +10,7 @@
 void Play_game(Stack_opt &stack1, Stack_opt &stack2, Stack_opt &stack3) {
 	Stack_opt junk;
 
-	char ent_key[2];
+	char ent_key[1];
 	unsigned short int pick = 1;
 	unsigned short int stat = 0;
 
@@ -43,9 +43,9 @@ void Play_game(Stack_opt &stack1, Stack_opt &stack2, Stack_opt &stack3) {
 
 		Clean_screen();
 
-		stack1.Show(); std::printf(" (1)\n\n");
-		stack2.Show(); std::printf(" (2)\n\n");
-		stack3.Show(); std::printf(" (3)\n\n");
+		stack1.Show(); std::printf(" \e[1;31m(1)\e[0m\n\n");
+		stack2.Show(); std::printf(" \e[1;31m(2)\e[0m\n\n");
+		stack3.Show(); std::printf(" \e[1;31m(3)\e[0m\n\n");
 
 		Sleep(1);
 
